@@ -23,7 +23,7 @@
 
         <title>HV Karen Rodriguez</title>
     </head>
-    <body style="overflow:hidden">
+    <body>
         <div class="container">
             <div class="container-fluid" id="cuerpo">
                 <div class="row">
@@ -54,7 +54,7 @@
                     
 
 
-                    <div class="col-sm-7 info_general overflow-auto" >
+                    <div class="col-sm-7 info_general" >
                         <div class="titulos">Experiencia Laboral</div>
 
                         <div class="col-12">
@@ -245,10 +245,15 @@
         </div>
         <script>
                     
-            console.log(document.documentElement.clientHeight);
+            console.log(document.documentElement.clientHeight,document.documentElement.clientWidth);
+
+            if(document.documentElement.clientWidth >= 800){
+                document.getElementsByClassName('info_general')[0].style.clientHeight = document.documentElement.clientHeight+'px';
+                document.getElementsByClassName('info_general')[0].style.height = document.documentElement.clientHeight+'px';
+            }
+
             console.log(document.getElementsByClassName('info_general'));
-            document.getElementsByClassName('info_general')[0].style.clientHeight = document.documentElement.clientHeight+'px';
-            document.getElementsByClassName('info_general')[0].style.height = document.documentElement.clientHeight+'px';
+            
             
         </script>
     </body>

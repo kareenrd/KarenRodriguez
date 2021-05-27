@@ -1,3 +1,6 @@
+body{
+	overflow:hidden;
+}
 
 .titulos{
 	font-family: 'Englebert';
@@ -24,6 +27,7 @@
 
 .info_general{
 	padding: 5px;
+	overflow: auto;
 	
 }
 .info_principal{
@@ -111,8 +115,14 @@
     background-color: #1F618D;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 800px) {
 	body{
 		overflow: auto;
 	}
+
+	.info_general{
+	padding: 5px;
+	overflow: hidden;
+	
+}
 }
