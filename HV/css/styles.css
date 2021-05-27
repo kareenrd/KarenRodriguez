@@ -1,0 +1,78 @@
+
+#cuerpo *{
+	/* padding: 10px; */
+}
+
+.titulos{
+	font-family: 'Englebert';
+	font-size: 30px;
+	background-color: #1F618D;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.contenido{
+	font-family: 'Quicksand';
+	font-size: 22px;
+	font-weight: bold;
+	color: #1F618D;
+	padding: 10px;
+}
+
+.adicionales{
+	font-family: 'Quicksand';
+	font-size: 18px;
+	padding: 10px;
+}
+
+.info_general{
+	padding: 5px;
+	
+}
+.info_principal{
+	background: #F2F2F2;
+	padding: 5px;
+}
+
+#nombre{
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	
+}
+
+.carrera{
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Amatic SC';
+	border-bottom: 2px solid #1F618D;
+	padding: 10px;
+
+}
+
+.cargo{
+	background: #F2F2F2;
+	font-family: 'Amatic SC';
+	font-size: 30px;
+	font-weight: bold;
+	color: #1F618D;
+}
+
+.empresa{
+	border-right: 2px solid #1F618D;
+	text-align: right;
+	align-items: center;
+}
+
+.funciones li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f00c";
+	display: inline-block;
+	padding: 2px 5px;
+	vertical-align: middle;
+	font-weight:bold;
+	color: #1F618D;
+	
+}
