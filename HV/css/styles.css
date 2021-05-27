@@ -1,8 +1,4 @@
 
-#cuerpo *{
-	/* padding: 10px; */
-}
-
 .titulos{
 	font-family: 'Englebert';
 	font-size: 30px;
@@ -63,16 +59,60 @@
 .empresa{
 	border-right: 2px solid #1F618D;
 	text-align: right;
-	align-items: center;
+	display: flex;
+    align-items: center;
 }
 
-.funciones li:before {
+.fechas{
+	display: flex;
+    align-items: center;
+}
+
+.funciones li:before, .academico li:before, .areas_experiencia li:before {
 	font-family: "Font Awesome 5 Free";
-	content: "\f00c";
+	content: "\f054";
 	display: inline-block;
 	padding: 2px 5px;
 	vertical-align: middle;
+	margin: 0px 5px;
 	font-weight:bold;
 	color: #1F618D;
+	font-size: 12px;
 	
+}
+
+.academico{
+	border-right: 2px solid #1F618D;
+	text-align: left;
+	align-items: center;
+}
+
+
+.info_general::-webkit-scrollbar {
+    width: 3px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: block;  /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.info_general::-webkit-scrollbar-thumb {
+    background: #1F618D;
+    border-radius: 5px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.info_general::-webkit-scrollbar-thumb:hover {
+    background: #F2F2F2;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.info_general::-webkit-scrollbar-thumb:active {
+    background-color: #1F618D;
+}
+
+@media only screen and (min-width: 576px) {
+	body{
+		overflow: auto;
+	}
 }
