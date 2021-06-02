@@ -1,6 +1,4 @@
-body{
-	overflow:hidden;
-}
+
 
 .titulos{
 	font-family: 'Englebert';
@@ -115,14 +113,25 @@ body{
     background-color: #1F618D;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 500px) {
 	body{
 		overflow: auto;
 	}
 
 	.info_general{
-	padding: 5px;
-	overflow: hidden;
-	
+		padding: 5px;
+		overflow: hidden;
+	}
 }
+
+@media only screen and (min-width: 501px) {
+	body{
+		overflow: hidden;
+	}
+
+	.info_general{
+		padding: 5px;
+		overflow: auto;
+	}
 }
+
