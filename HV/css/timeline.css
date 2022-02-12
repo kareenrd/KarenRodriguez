@@ -1,0 +1,300 @@
+/*
+--oxford-blue: #102542ff;
+--middle-blue-green: #9dd9d2ff;
+--blue-jeans: #33a1fdff;
+--violet-crayola: #963484ff;
+--platinum: #e6e8e6ff;
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #102542ff;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+
+/* ================ The Timeline ================ */
+
+.timeline {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+}
+
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: #e6e8e6ff;
+    /* background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%);
+    background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, rgb(80, 80, 80) 8%, rgb(80, 80, 80) 92%, rgba(80, 80, 80, 0) 100%); */
+    z-index: 5;
+}
+
+.timeline li {
+    padding: 1em 0;
+}
+
+.timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.direction-l {
+    position: relative;
+    width: 45%;
+    float: left;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.direction-r {
+    position: relative;
+    width: 45%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.flag-wrapper {
+    position: relative;
+    display: inline-block;
+    /* text-align: center; */
+}
+
+.flag {
+    font-family: 'Englebert';
+    position: relative;
+    display: inline;
+    padding: 2px 10px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    border: 1px solid;
+}
+
+.cargo {
+    background-color: #963484ff;
+    border: 1px solid #963484ff;
+}
+
+.badge-plt {
+    color: #212529;
+    background-color: #e6e8e6ff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.direction-l:before,
+.direction-r:before {
+    position: absolute;
+    top: 15%;
+    right: -15%;
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    background: #102542ff;
+    border-radius: 15px;
+    border: 4px solid #e6e8e6ff;
+    z-index: 10;
+}
+
+.direction-r:before {
+    left: -15%;
+}
+
+.direction-l:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 20%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.direction-r:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 15%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-width: 8px;
+    pointer-events: none;
+}
+
+.time-wrapper {
+    display: inline;
+    line-height: 1em;
+    font-size: 0.66666em;
+    color: #963484ff;
+    vertical-align: middle;
+    font-family: 'Quicksand';
+    margin-top: 5px;
+}
+
+.direction-l .time-wrapper {
+    float: left;
+}
+
+.direction-r .time-wrapper {
+    float: right;
+}
+
+.funciones div:before,
+.academico div:before,
+.areas_experiencia div:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    display: inline-block;
+    padding: 2px 5px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    font-weight: bold;
+    color: #963484ff;
+    font-size: 12px;
+}
+
+.time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248, 248, 248);
+}
+
+.desc {
+    margin: 1em 0.75em 0 0;
+    font-size: 0.77777em;
+    /* font-style: italic; */
+    line-height: 1.5em;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+.direction-r .desc {
+    margin: 1em 0 0 0.75em;
+}
+
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+    .timeline {
+        width: 100%;
+        padding: 4em 0 1em 0;
+    }
+    .timeline:before {
+        background-color: #e6e8e63b;
+    }
+    .timeline li {
+        padding: 2em 0;
+    }
+    .direction-l,
+    .direction-r {
+        float: none;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .flag-wrapper {
+        text-align: center;
+    }
+    .flag {
+        background: #102542ff;
+        color: white;
+        border: 1px solid;
+        z-index: 15;
+        display: block;
+    }
+    .direction-l:before,
+    .direction-r:before {
+        position: absolute;
+        top: -20%;
+        left: 49%;
+        content: ' ';
+        display: block;
+        margin-left: -9px;
+        z-index: 10;
+    }
+    .direction-l:after,
+    .direction-r:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        height: 0;
+        width: 0;
+        margin-left: -8px;
+        border: solid transparent;
+        border-bottom-color: white;
+        border-width: 8px;
+        pointer-events: none;
+    }
+    .time-wrapper {
+        display: block;
+        position: relative;
+        margin: 4px 0 0 0;
+        z-index: 14;
+    }
+    .direction-l .time-wrapper {
+        float: none;
+    }
+    .direction-r .time-wrapper {
+        float: none;
+    }
+    .desc {
+        position: relative;
+        margin: 1em 0 0 0;
+        padding: 1em;
+        background: #102542ff;
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.20);
+        z-index: 15;
+    }
+    .direction-l .desc,
+    .direction-r .desc {
+        position: relative;
+        margin: 1em 1em 0 1em;
+        padding: 1em;
+        z-index: 15;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 660px) {
+    .direction-l .desc,
+    .direction-r .desc {
+        margin: 1em 4em 0 4em;
+    }
+}

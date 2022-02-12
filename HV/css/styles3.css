@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Love';
+    src: url('../css/LoveAndFaith.ttf');
+}
+
+@font-face {
+    font-family: 'Salmonpie';
+    src: url('../css/Salmonpie.ttf');
+}
+
+@font-face {
+    font-family: 'Sweet';
+    src: url('../css/SweetIcedCoffee.ttf');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #102542ff; */
+    /* color: white; */
+    font-family: 'Sweet', sans-serif;
+    font-size: 25px;
+    /* line-height: 1.6em; */
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.cabecero{
+    font-family: 'Love', sans-serif;
+}
+
+.nombre{
+    color: #4472c4; 
+    font-weight: bold; 
+    font-size: 40px;
+}
+
+.carrera{
+    color: #44546a; 
+    font-weight: bold; 
+    font-size: 35px;
+}
+
+.tlt_perfil{
+    font-family: 'Salmonpie', sans-serif;
+    color:#4472c4;
+    font-weight: bold;
+    /* font-size: 35px; */
+}
+
+.cabecero td {
+    border-bottom: 2px solid #4472c4;
+}
+.perfil tr:first-child{
+    border-bottom: 2px solid #4472c4;
+
+}
+
+.cabecero td:first-child{
+    border-right: 2px solid #4472c4;
+    width: 50%;
+}
+
+.perfil td:first-child{
+    border-right: 2px solid #4472c4;
+    width: 60%;
+}
+
+.perfil td{
+    padding: 15px;
+    
+}
+
+.laboral td{
+    border: 2px solid #4472c4;
+}
+
+
+
+.laboral tr:first-child{
+    text-align: center;
+}
+
+
+li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0px 5px;
+    font-weight: bold;
+    color: #4472c4;
+    font-size: 12px;
+}
+
+small{
+    font-size: 18px;
+}
+
+.table{
+    border-color: transparent;
+    vertical-align: middle;
+    list-style:none;
+}
+
+
+@media screen and (min-width: 360px) and (max-width:700px) {
+    body{
+        font-size: 18px;
+    }
+    .nombre{
+        font-size: 25px;
+    }
+    .carrera{
+        font-size: 20px;
+    }
+}

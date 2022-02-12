@@ -1,137 +1,139 @@
-
-
-.titulos{
-	font-family: 'Englebert';
-	font-size: 30px;
-	background-color: #1F618D;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
+.titulos {
+    font-family: 'Englebert';
+    font-size: 30px;
+    background-color: #1F618D;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.contenido{
-	font-family: 'Quicksand';
-	font-size: 22px;
-	font-weight: bold;
-	color: #1F618D;
-	padding: 10px;
+.contenido {
+    font-family: 'Quicksand';
+    font-size: 22px;
+    font-weight: bold;
+    color: #1F618D;
+    padding: 10px;
 }
 
-.adicionales{
-	font-family: 'Quicksand';
-	font-size: 18px;
-	padding: 10px;
+.adicionales {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    padding: 10px;
 }
 
-.info_general{
-	padding: 5px;
-	overflow: auto;
-	
-}
-.info_principal{
-	background: #F2F2F2;
-	padding: 5px;
+.info_general {
+    padding: 5px;
+    overflow: auto;
 }
 
-#nombre{
-	align-items: center;
-	text-align: center;
-	font-size: 40px;
-	
+.info_principal {
+    background: #F2F2F2;
+    padding: 5px;
 }
 
-.carrera{
-	text-align: center;
-	font-size: 35px;
-	font-weight: bold;
-	font-family: 'Amatic SC';
-	border-bottom: 2px solid #1F618D;
-	padding: 10px;
-
+#nombre {
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
 }
 
-.cargo{
-	background: #F2F2F2;
-	font-family: 'Amatic SC';
-	font-size: 30px;
-	font-weight: bold;
-	color: #1F618D;
+.carrera {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Amatic SC';
+    border-bottom: 2px solid #1F618D;
+    padding: 10px;
 }
 
-.empresa{
-	border-right: 2px solid #1F618D;
-	text-align: right;
-	display: flex;
+.cargo {
+    background: #F2F2F2;
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    font-weight: bold;
+    color: #1F618D;
+}
+
+.empresa {
+    border-right: 2px solid #1F618D;
+    text-align: right;
+    display: flex;
     align-items: center;
 }
 
-.fechas{
-	display: flex;
+.fechas {
+    display: flex;
     align-items: center;
 }
 
-.funciones li:before, .academico li:before, .areas_experiencia li:before {
-	font-family: "Font Awesome 5 Free";
-	content: "\f054";
-	display: inline-block;
-	padding: 2px 5px;
-	vertical-align: middle;
-	margin: 0px 5px;
-	font-weight:bold;
-	color: #1F618D;
-	font-size: 12px;
-	
+.funciones li:before,
+.academico li:before,
+.areas_experiencia li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    display: inline-block;
+    padding: 2px 5px;
+    vertical-align: middle;
+    margin: 0px 5px;
+    font-weight: bold;
+    color: #1F618D;
+    font-size: 12px;
 }
 
-.academico{
-	border-right: 2px solid #1F618D;
-	text-align: left;
-	align-items: center;
+.academico {
+    border-right: 2px solid #1F618D;
+    text-align: left;
+    align-items: center;
 }
-
 
 .info_general::-webkit-scrollbar {
-    width: 3px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
-    display: block;  /* Ocultar scroll */
+    width: 3px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    display: block;
+    /* Ocultar scroll */
 }
 
+
 /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+
 .info_general::-webkit-scrollbar-thumb {
     background: #1F618D;
     border-radius: 5px;
 }
 
+
 /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+
 .info_general::-webkit-scrollbar-thumb:hover {
     background: #F2F2F2;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Cambiamos el fondo cuando esté en active */
+
 .info_general::-webkit-scrollbar-thumb:active {
     background-color: #1F618D;
 }
 
 @media only screen and (max-width: 500px) {
-	body{
-		overflow: auto;
-	}
-
-	.info_general{
-		padding: 5px;
-		overflow: hidden;
-	}
+    body {
+        overflow: auto;
+    }
+    .info_general {
+        padding: 5px;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (min-width: 501px) {
-	body{
-		overflow: hidden;
-	}
-
-	.info_general{
-		padding: 5px;
-		overflow: auto;
-	}
+    body {
+        overflow: hidden;
+    }
+    .info_general {
+        padding: 5px;
+        overflow: auto;
+    }
 }
-
